@@ -7,7 +7,7 @@ public class minimumElementChallenge {
     public static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int count, min=0;
+        int count, min;
         int[] arr ;
         System.out.println("Enter the Value of count");
         count = sc.nextInt();
@@ -19,7 +19,8 @@ public class minimumElementChallenge {
     }
 
     private static int findMin(int[] arr) {
-        int min = arr[0];
+//        int min = arr[0];
+        int min = Integer.MAX_VALUE;
         for (int i=1; i< arr.length;i++){
             if(arr[i]<min)
                 min = arr[i];
