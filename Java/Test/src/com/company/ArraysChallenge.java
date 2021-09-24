@@ -25,7 +25,8 @@ public class ArraysChallenge {
         }
     }
     public static int[] sortArray(int[] arr){
-        int temp = 0;
+//        Method 1
+        int temp;
         for(int i=0;i< arr.length;i++){
             for (int j=i;j< arr.length;j++){
                 if(arr[i]<arr[j]){
@@ -35,6 +36,21 @@ public class ArraysChallenge {
                 }
             }
         }
+
+//        Method 2
+//        boolean flag = true;
+//        int temp;
+//        while (flag){
+//            flag = false;
+//            for (int i=0;i< arr.length-1;i++){
+//                if (arr[i]<arr[i+1]){
+//                    temp = arr[i];
+//                    arr[i] = arr[i+1];
+//                    arr[i+1] = temp;
+//                    flag =true;
+//                }
+//            }
+//        }
         return arr;
     }
 }
