@@ -3,7 +3,7 @@ package com.company;
 import java.util.ArrayList;
 
 public class groceryList {
-    private ArrayList<String> groceryList = new ArrayList<>();
+    private final ArrayList<String> groceryList = new ArrayList<>();
 
     public void addGroceryItem(String item){
         groceryList.add(item);
@@ -30,7 +30,9 @@ public class groceryList {
 //        return searchItem;
     }
 
-
+    public ArrayList<String> getGroceryList() {
+        return groceryList;
+    }
 //    public void main(String[] args) {
 //        String item;
 //        System.out.println("Enter Elements in the grocery list");
